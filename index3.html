@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Annamalai – Stay in Villupuram, Tamil Nadu</title>
+<meta name="description" content="Comfortable rooms, South Indian hospitality and an easy base for Villupuram and Pondicherry. Book your stay at Hotel Annamalai.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#0b2f33; --lagoon:#1b6f6c; --marigold:#f4b63f; --jasmine:#fff7e3; --ink:#f6f3ea;
+  --glass:rgba(255,255,255,.12); --glass-strong:rgba(255,255,255,.2); --stroke:rgba(255,255,255,.28);
+  --serif:'Fraunces',Georgia,serif; --sans:'Outfit','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--sans);color:var(--ink);background:var(--deep);line-height:1.6;overflow-x:hidden;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-2;
+  background:
+   radial-gradient(60vmax 60vmax at 85% -10%,#2a9d8f66,transparent 60%),
+   radial-gradient(50vmax 50vmax at -10% 40%,#f4b63f40,transparent 60%),
+   radial-gradient(55vmax 55vmax at 70% 110%,#1b6f6c99,transparent 60%),
+   linear-gradient(160deg,#0b2f33,#0d3b3f 55%,#0a2629)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;pointer-events:none;
+  background-image:radial-gradient(rgba(255,247,227,.5) 1.2px,transparent 1.4px);background-size:34px 34px}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--marigold);outline-offset:3px}
+.wrap{width:min(1160px,92%);margin-inline:auto}
+.glass{background:var(--glass);border:1px solid var(--stroke);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);
+  box-shadow:0 20px 50px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.25);border-radius:22px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:.6rem}
+.lead{color:#ffffffbf;max-width:56ch}
+section{padding:90px 0}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:999px;font-weight:500;border:1px solid var(--stroke);
+  background:var(--glass-strong);color:var(--ink);cursor:pointer;font:inherit;font-weight:500;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.3)}
+.btn.primary{background:var(--marigold);color:#2a1d00;border-color:transparent}
+.btn.primary:hover{background:#ffc75a}
+
+/* nav */
+header{position:fixed;top:14px;left:0;right:0;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.7rem 1.2rem;border-radius:999px}
+.brand{font-family:var(--serif);font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:.6rem}
+.brand i{width:30px;height:30px;border-radius:50%;background:var(--marigold);display:grid;place-items:center;color:#2a1d00;font-style:normal;font-size:.95rem}
+.links{display:flex;gap:1.6rem;align-items:center;font-size:.95rem}
+.links a:not(.btn){opacity:.85}.links a:not(.btn):hover{opacity:1;color:var(--marigold)}
+.burger{display:none;background:none;border:0;color:inherit;font-size:1.6rem;cursor:pointer}
+
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5.2rem);margin-bottom:1.2rem}
+.hero h1 em{font-style:normal;color:var(--marigold)}
+.hero .lead{font-size:1.15rem;margin-bottom:2rem}
+.hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.chips{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:2.2rem}
+.chip{padding:.4rem .9rem;border-radius:999px;font-size:.85rem}
+.booking{padding:1.8rem}
+.booking h3{font-size:1.5rem;margin-bottom:1.1rem}
+.field{display:flex;flex-direction:column;gap:.3rem;margin-bottom:.9rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+label{font-size:.85rem;color:#ffffffb3}
+input,select,textarea{font:inherit;color:var(--ink);background:rgba(255,255,255,.1);border:1px solid var(--stroke);border-radius:12px;padding:.7rem .9rem;width:100%}
+select option{color:#111}
+input::placeholder,textarea::placeholder{color:#ffffff80}
+input[type=date]{color-scheme:dark}
+.booking .btn{width:100%;justify-content:center;margin-top:.3rem}
+.status{margin-top:.8rem;font-size:.9rem;color:var(--marigold);min-height:1.3em}
+
+/* rooms */
+.head{margin-bottom:2.5rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.room{overflow:hidden;display:flex;flex-direction:column}
+.room .art{height:190px;position:relative;display:grid;place-items:center;font-size:3rem}
+.room:nth-child(1) .art{background:linear-gradient(135deg,#2a9d8f,#0f4c4f)}
+.room:nth-child(2) .art{background:linear-gradient(135deg,#f4b63f,#b9650c)}
+.room:nth-child(3) .art{background:linear-gradient(135deg,#3b6ea5,#142f52)}
+.room .body{padding:1.4rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.room h3{font-size:1.4rem}
+.room ul{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin:.3rem 0}
+.room li{font-size:.8rem;padding:.2rem .7rem;border-radius:999px;background:rgba(255,255,255,.12)}
+.price{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:.8rem}
+.price strong{font-family:var(--serif);font-size:1.5rem}
+.price small{opacity:.7}
+.note{margin-top:1.2rem;font-size:.85rem;opacity:.65}
+
+/* amenities */
+.amen{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.amen div{padding:1.5rem}
+.amen span{font-size:1.8rem;display:block;margin-bottom:.5rem}
+.amen h3{font-size:1.1rem;margin-bottom:.3rem}
+.amen p{font-size:.9rem;opacity:.78}
+
+/* nearby */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:stretch}
+.near{padding:2rem}
+.near ul{list-style:none;margin-top:1.2rem;display:grid;gap:.9rem}
+.near li{display:flex;justify-content:space-between;gap:1rem;padding-bottom:.8rem;border-bottom:1px solid var(--stroke)}
+.near li span:last-child{opacity:.7;white-space:nowrap}
+.map{padding:.6rem;min-height:340px}
+.map iframe{width:100%;height:100%;min-height:330px;border:0;border-radius:16px;filter:saturate(.9)}
+
+/* contact */
+.contact{padding:2.4rem;display:grid;grid-template-columns:1fr 1fr;gap:2.4rem}
+.info p{margin:.6rem 0;color:#ffffffd0}
+.info b{color:var(--marigold);font-weight:500}
+footer{padding:2rem 0 3rem;text-align:center;font-size:.85rem;opacity:.7}
+
+@media(max-width:980px){
+  .hero-grid,.split,.contact{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}.amen{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .burger{display:block}
+  .links{position:absolute;top:70px;left:0;right:0;flex-direction:column;padding:1.4rem;border-radius:22px;display:none;
+    background:rgba(11,47,51,.82);border:1px solid var(--stroke);backdrop-filter:blur(18px)}
+  .links.open{display:flex}
+  .amen{grid-template-columns:1fr}
+  section{padding:64px 0}
+}
+@media(prefers-reduced-motion:no-preference){
+  .hero-grid>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .hero-grid>*:nth-child(2){animation-delay:.18s}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav class="nav glass" aria-label="Main">
+      <a href="#top" class="brand"><i>A</i>Hotel Annamalai</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="links" id="links">
+        <a href="#rooms">Rooms</a><a href="#amenities">Amenities</a><a href="#location">Location</a><a href="#contact">Contact</a>
+        <a href="#top" class="btn primary" style="padding:.55rem 1.2rem">Book now</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>A calm stay in the heart of <em>Villupuram</em></h1>
+      <p class="lead">Clean, comfortable rooms with warm South Indian hospitality. A convenient base for business travel, temple visits and day trips to Pondicherry.</p>
+      <div class="hero-cta">
+        <a href="#rooms" class="btn primary">View rooms</a>
+        <a href="#location" class="btn">Find us</a>
+      </div>
+      <div class="chips">
+        <span class="chip glass">Air-conditioned rooms</span>
+        <span class="chip glass">Free Wi-Fi</span>
+        <span class="chip glass">24-hour front desk</span>
+      </div>
+    </div>
+
+    <form class="booking glass" id="bookForm" aria-labelledby="bk">
+      <h3 id="bk">Check availability</h3>
+      <div class="row">
+        <div class="field"><label for="in">Check-in</label><input type="date" id="in" required></div>
+        <div class="field"><label for="out">Check-out</label><input type="date" id="out" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="guests">Guests</label>
+          <select id="guests"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option></select></div>
+        <div class="field"><label for="type">Room</label>
+          <select id="type"><option>Standard</option><option>Deluxe</option><option>Family suite</option></select></div>
+      </div>
+      <div class="field"><label for="phone">Your phone number</label><input type="tel" id="phone" placeholder="+91 98765 43210" required></div>
+      <button class="btn primary" type="submit">Request booking</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section id="rooms">
+  <div class="wrap">
+    <div class="head"><h2>Rooms for every kind of trip</h2><p class="lead">Simple, well-kept rooms with everything you need after a long day.</p></div>
+    <div class="cards">
+      <article class="room glass"><div class="art" aria-hidden="true">🛏️</div><div class="body">
+        <h3>Standard room</h3><p>A quiet room with a comfortable bed, ideal for solo travelers and couples.</p>
+        <ul><li>AC</li><li>Wi-Fi</li><li>TV</li><li>Sleeps 2</li></ul>
+        <div class="price"><div><strong>₹1,500</strong> <small>/ night</small></div><a href="#top" class="btn">Book</a></div></div></article>
+      <article class="room glass"><div class="art" aria-hidden="true">🌿</div><div class="body">
+        <h3>Deluxe room</h3><p>More space, better light and a work desk for longer or business stays.</p>
+        <ul><li>AC</li><li>Wi-Fi</li><li>Work desk</li><li>Sleeps 3</li></ul>
+        <div class="price"><div><strong>₹2,200</strong> <small>/ night</small></div><a href="#top" class="btn">Book</a></div></div></article>
+      <article class="room glass"><div class="art" aria-hidden="true">👨‍👩‍👧</div><div class="body">
+        <h3>Family suite</h3><p>Extra beds and room to spread out, made for families and small groups.</p>
+        <ul><li>AC</li><li>Wi-Fi</li><li>Extra beds</li><li>Sleeps 5</li></ul>
+        <div class="price"><div><strong>₹3,200</strong> <small>/ night</small></div><a href="#top" class="btn">Book</a></div></div></article>
+    </div>
+    <p class="note">Sample prices shown. Confirm current rates with the front desk.</p>
+  </div>
+</section>
+
+<section id="amenities">
+  <div class="wrap">
+    <div class="head"><h2>What's included</h2></div>
+    <div class="amen">
+      <div class="glass"><span>❄️</span><h3>Air conditioning</h3><p>Cool, comfortable rooms through Tamil Nadu's warm months.</p></div>
+      <div class="glass"><span>📶</span><h3>Free Wi-Fi</h3><p>Stay connected for work, maps and calls home.</p></div>
+      <div class="glass"><span>🛎️</span><h3>24-hour front desk</h3><p>Check in late or leave early. Someone is always there.</p></div>
+      <div class="glass"><span>🍛</span><h3>Local food nearby</h3><p>Well-known vegetarian and biryani restaurants within a short walk or drive.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap">
+    <div class="head"><h2>Easy to reach, easy to explore</h2><p class="lead">Villupuram is a major rail and road junction, so you can get here and move on without fuss.</p></div>
+    <div class="split">
+      <div class="near glass">
+        <h3 style="font-size:1.5rem">Around the hotel</h3>
+        <ul>
+          <li><span>Villupuram Junction railway station</span><span>Short drive</span></li>
+          <li><span>Mailam Murugan Temple</span><span>About 45 min</span></li>
+          <li><span>Pondicherry beaches and old town</span><span>About 1 hr</span></li>
+          <li><span>Auroville</span><span>About 1 hr</span></li>
+        </ul>
+      </div>
+      <div class="map glass">
+        <iframe title="Hotel Annamalai on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=11.962062,79.498162&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact glass">
+      <div class="info">
+        <h2>Plan your stay</h2>
+        <p class="lead">Call, message or send a note. We'll confirm your room quickly.</p>
+        <p><b>Address</b><br>Hotel Annamalai, Villupuram, Tamil Nadu</p>
+        <p><b>Phone</b><br><a href="tel:+910000000000">+91 00000 00000</a></p>
+        <p><b>Email</b><br><a href="mailto:info@hotelannamalai.example">info@hotelannamalai.example</a></p>
+        <p><b>Check-in / out</b><br>From 12:00 PM / by 12:00 PM</p>
+        <a class="btn" style="margin-top:.6rem" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/search/?api=1&query=11.962062,79.498162">Get directions</a>
+      </div>
+      <form id="msgForm">
+        <div class="field"><label for="n">Name</label><input id="n" required></div>
+        <div class="field"><label for="e">Email</label><input id="e" type="email" required></div>
+        <div class="field"><label for="m">Message</label><textarea id="m" rows="5" required></textarea></div>
+        <button class="btn primary" type="submit">Send message</button>
+        <p class="status" id="msgStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Hotel Annamalai, Villupuram. All rights reserved.</footer>
+
+<script>
+const $=id=>document.getElementById(id);
+$('yr').textContent=new Date().getFullYear();
+$('burger').onclick=()=>{const o=$('links').classList.toggle('open');$('burger').setAttribute('aria-expanded',o)};
+$('links').addEventListener('click',e=>{if(e.target.tagName==='A')$('links').classList.remove('open')});
+
+const today=new Date().toISOString().split('T')[0];
+$('in').min=today;$('out').min=today;
+$('in').addEventListener('change',()=>{$('out').min=$('in').value;if($('out').value<$('in').value)$('out').value=''});
+
+$('bookForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const nights=Math.round((new Date($('out').value)-new Date($('in').value))/864e5);
+  $('status').textContent=nights>0
+    ? `Request received: ${$('type').value}, ${$('guests').value}, ${nights} night${nights>1?'s':''}. We'll call ${$('phone').value} to confirm.`
+    : 'Check-out must be after check-in.';
+});
+$('msgForm').addEventListener('submit',e=>{
+  e.preventDefault();$('msgStatus').textContent="Thanks, your message was sent. We'll reply soon.";e.target.reset();
+});
+</script>
+</body>
+</html>
